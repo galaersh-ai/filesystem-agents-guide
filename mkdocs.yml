@@ -1,0 +1,63 @@
+site_name: "Building Filesystem Agents"
+site_description: "Перевод курса Vercel Academy — файловый агент на bash-инструментах и Vercel Sandbox"
+site_author: "Перевод курса Vercel Academy"
+repo_url: https://vercel.com/academy/filesystem-agents
+edit_uri: ""
+
+theme:
+  name: material
+  language: ru
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Тёмная тема
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Светлая тема
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.indexes
+    - toc.integrate
+    - content.code.copy
+    - content.code.annotate
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+
+plugins:
+  - search
+
+nav:
+  - Главная: index.md
+  - Секция 1. Building an Agent:
+      - "1. Project Setup": 01-building-agent/1a-project-setup.md
+      - "2. Agent Skeleton": 01-building-agent/1b-agent-skeleton.md
+      - "3. Bash Tool": 01-building-agent/1c-bash-tool.md
+  - Секция 2. Running in the Sandbox:
+      - "4. Wire Up the Sandbox": 02-running-sandbox/2a-wire-up-sandbox.md
+      - "5. Files and Instructions": 02-running-sandbox/2b-files-and-instructions.md
+      - "6. Test and Extend": 02-running-sandbox/2c-test-and-extend.md
