@@ -6,6 +6,7 @@ edit_uri: ""
 
 theme:
   name: material
+  custom_dir: overrides
   language: ru
   palette:
     - scheme: default
@@ -29,6 +30,9 @@ theme:
     - toc.integrate
     - content.code.copy
     - content.code.annotate
+
+extra_javascript:
+  - javascripts/metrika.js
 
 markdown_extensions:
   - admonition
